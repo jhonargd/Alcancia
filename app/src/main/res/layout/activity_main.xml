@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rdgGrupo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:checkedButton="@+id/rdbOne"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rd50"
+                        android:layout_width="wrap_content"
+                        android:checked="true"
+                        android:layout_height="wrap_content"
+                        android:text="$50" />
+
+                    <RadioButton
+                        android:id="@+id/rd100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$100" />
+
+                    <RadioButton
+                        android:id="@+id/rd200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$200" />
+                    <RadioButton
+                        android:id="@+id/rd500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$500" />
+                    <RadioButton
+                        android:id="@+id/rd1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$1000" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnIniciar"
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_btn_login"
+                    android:onClick="OnInsert"
+                    android:text="Insertar Moneda"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.6">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Denominacion $50"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txtCount50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad: " />
+                <TextView
+                    android:id="@+id/txtSum50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="total: " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"></LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Denominacion $100"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txtCount100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad: " />
+                <TextView
+                    android:id="@+id/txtSum100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="total: " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"></LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Denominacion $200"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txtCount200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad: " />
+                <TextView
+                    android:id="@+id/txtSum200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="total: " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"></LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Denominacion $500"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txtCount500"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad: " />
+                <TextView
+                    android:id="@+id/txtSum500"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="total: " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"></LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Denominacion $1000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txtCount1000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad: " />
+                <TextView
+                    android:id="@+id/txtSum1000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="total: " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtCountotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:text="Cantidad Total: "
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txtSumTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total: "
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
